@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call The Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+</head>
+<body>
+    <div class="start">
+        <img class="title" src="./img/title.png">
+        <img class="preview" src="./img/preview.png">
+        <button class="startButton">
+            <p class="words"><img src="./img/arrow.png" class="arrowHead"> START GAME</p>
+        </button>
+    </div>
+
+    <div class="selection hide">
+        <img class="title" src="./img/title.png">
+        <p class="text">Select difficulty</p>
+        <button class="easyButton">
+            <p class="words">Easy</p>
+        </button>
+        <button class="normalButton">
+            <p class="words">Normal</p>
+        </button>
+        <button class="hardButton">
+            <p class="words">Hard</p>
+        </button>
+    </div>
+
+    <div class="game hide">
+        <p class="number"></p>
+        <p class="question"></p>
+        <div class="phone">
+            <img src="./img/phone.png">
+            <div class="button">
+                <button class="empty"></button>
+                <button class="btn0" data="0">0</button>
+                <button class="empty"></button>
+                <button class="btn1" data="1">1</button>
+                <button class="btn2" data="2">2</button>
+                <button class="btn3" data="3">3</button>
+                <button class="btn4" data="4">4</button>
+                <button class="btn5" data="5">5</button>
+                <button class="btn6" data="6">6</button>
+                <button class="btn7" data="7">7</button>
+                <button class="btn8" data="8">8</button>
+                <button class="btn9" data="9">9</button>
+            </div>
+        </div>
+        <div class="popUp hide">
+            <div class="background">
+                <p class="answer">Wrong Number!</p>
+                <img class="image" src="./img/wrong.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="final hide">
+        <img class="endImage" src="./img/end.png">
+        <p class="endText">Well done!</p>
+        <button class="againButton">
+            <p class="words"><img src="./img/again.png" class="arrowHead">Play again</p>
+        </button>
+        <button class="homeButton">
+            <p class="words"><img src="./img/home.png" class="arrowHead">Back to home</p>
+        </button>
+    </div>
+        
+    <audio id="click" src="sound/click.wav"></audio>
+    <audio id="phone" src="sound/phone.wav"></audio>
+    <audio id="correct" src="./sound/correct.wav"></audio>
+    <audio id="wrong" src="./sound/wrong.wav"></audio>
+    <audio id="clap" src="./sound/clap.wav"></audio>
+        
+    <script src="./script.js"></script>
+</body>
+</html>
